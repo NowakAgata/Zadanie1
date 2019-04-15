@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MyFirstApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="name">Agata Nowak</string>
+    <string name="change_contact">CHANGE CONTACT</string>
+    <string name="change_sound">CHANGE SOUND</string>
+    <string name="Sound1">Sound 1</string>
+    <string name="Sound2">Sound 2</string>
+    <string name="Sound3">Sound 3</string>
+    <string name="Sound4">Sound 4</string>
+    <string name="Sound5">Sound 5</string>
+    <string name="Sound6">Sound6</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Ok">OK</string>
+    <string-array name="names">
+        <item>Jacek</item>
+        <item>Maciej</item>
+        <item>Joanna</item>
+        <item>Agata</item>
+        <item>Adrian</item>
+        <item>Tomasz</item>
+    </string-array>
+</resources>
