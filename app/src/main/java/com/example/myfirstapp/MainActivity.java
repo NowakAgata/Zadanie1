@@ -9,8 +9,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -73,7 +76,33 @@ public class MainActivity extends AppCompatActivity {
 
     public void changeText() {
         txtV.setText(currentName);
-       // int rand = Random();
+        Random rand = new Random() ;
+        int avatarID = rand.nextInt(4)+1 ;
+
+        //Toast.makeText(getApplicationContext(),""+avatarID,Toast.LENGTH_SHORT).show();
+        switch(avatarID){
+            case 1:
+                avatarID = R.drawable.avatar_1;
+                break;
+            case 2:
+                avatarID = R.drawable.avatar_2;
+                break;
+            case 3:
+                avatarID = R.drawable.avatar_3;
+                break;
+            case 4:
+                avatarID = R.drawable.avatar_4;
+                break;
+            case 5:
+                avatarID = R.drawable.avatar_5;
+                break;
+            default:
+                avatarID = R.drawable.avatar_1;
+                Toast.makeText(getApplicationContext(),""+avatarID,Toast.LENGTH_SHORT).show();
+        }
+        ImageView imgV = findViewById(R.id.image_v);
+        imgV.setImageResource(avatarID);
+
     }
 
     public void changeContact(View view) {
